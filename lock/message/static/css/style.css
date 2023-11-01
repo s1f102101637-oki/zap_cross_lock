@@ -1,9 +1,29 @@
 .profile-card {
     /* Add your styles here */
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;  /* 子要素を縦に並べる */
+    align-items: center;  /* 子要素を中央寄せ */
+    justify-content: center;
 }
 
 .profile-card:hover {
     transform: scale(1.1);
     /* Other hover styles */
+}
+
+.profile-card img {
+    width: 100px;  /* または希望するサイズ */
+    height: 100px;  /* または希望するサイズ */
+    object-fit: cover;  /* アスペクト比を保ちつつ、指定されたサイズに収まるように調整 */
+}
+
+.profile-row {
+    display: flex;
+    justify-content: space-around;  /* カード間にスペースを均等に配置 */
+}
+
+.profile-card p {
+    margin: 0;  /* 余白を削除して中央寄せを正確に */
+    text-align: center;  /* テキストを中央寄せ */
 }
