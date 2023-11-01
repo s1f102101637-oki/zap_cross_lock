@@ -1,0 +1,9 @@
+.profile-card {
+    /* Add your styles here */
+    transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: scale(1.1);
+    /* Other hover styles */
+}
