@@ -7,5 +7,7 @@ def message_page(request):
   return render(request, 'message/index.html', {})
 
 def profile_view(request, name):
-    # 何らかの処理（例：データベースからプロフィール情報を取得）
-    return render(request, 'profile_template.html', {'name': name})
+    # ここでプロフィールのデータを取得する
+    # 例: profile = get_object_or_404(ProfileModel, name=name)
+    context = {'profile': profile}
+    return render(request, 'profile.html', context)

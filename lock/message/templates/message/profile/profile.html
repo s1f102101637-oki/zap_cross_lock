@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ profile.name }}のプロフィール</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="profile-container">
+        <h1>{{ profile.name }}</h1>
+        <img src="{% static profile.image_url %}" alt="{{ profile.name }}" style="width:100px; height:100px; object-fit:cover;">
+        <p>{{ profile.description }}</p>
+        <!-- その他のプロフィール情報 -->
+    </div>
+
+</body>
+</html>
