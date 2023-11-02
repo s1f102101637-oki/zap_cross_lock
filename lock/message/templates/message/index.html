@@ -12,94 +12,126 @@
     <div class="container">
         <!-- Row 1 -->
         <div class="profile-row">
-            <div class="profile-card" data-name="airi">
-                <img src="{% static 'images/airi.jpg' %}" alt="Name1">
-                <p>Airi</p>
-            </div>
-            <div class="profile-card" data-name="ayaka">
-                <img src="{% static 'images/ayaka.jpg' %}" alt="Name2">
-                <p>Ayaka</p>
-            </div>
-            <div class="profile-card" data-name="hayato">
-                <img src="{% static 'images/hayato.jpg' %}" alt="Name3">
-                <p>Hayato</p>
-            </div>
-            <div class="profile-card" data-name="hinako">
-                <img src="{% static 'images/hinako.jpg' %}" alt="Name4">
-                <p>Hinako
-            </div>
-            <div class="profile-card" data-name="kanon">
-                <img src="{% static 'images/kanon.jpg' %}" alt="Name5">
-                <p>Kanon</p>
-            </div>
+            <a href="{% url 'profile' name='airi' %}" class="profile-link">
+                <div class="profile-card" data-name="airi">
+                    <img src="{% static 'images/airi.jpg' %}" alt="Airi">
+                    <p>Airi</p>
+                </div>
+            </a>
+            <a href="{% url 'profile' name='ayaka' %}" class="profile-link">
+                <div class="profile-card" data-name="airi">
+                    <img src="{% static 'images/ayaka.jpg' %}" alt="ayaka">
+                    <p>Ayaka</p>
+                </div>
+            </a>
+            <a href="{% url 'profile' name='hayato' %}" class="profile-link">
+                <div class="profile-card" data-name="airi">
+                    <img src="{% static 'images/hayato.jpg' %}" alt="hayato">
+                    <p>Hayato</p>
+                </div>
+            </a>
+            <a href="{% url 'profile' name='hinako' %}" class="profile-link">
+                <div class="profile-card" data-name="hinako">
+                    <img src="{% static 'images/hinako.jpg' %}" alt="hinako">
+                    <p>Hinako</p>
+                </div>
+            </a>
+            <a href="{% url 'profile' name='kanon' %}" class="profile-link">
+                <div class="profile-card" data-name="kanon">
+                    <img src="{% static 'images/kanon.jpg' %}" alt="kanon">
+                    <p>Kanon</p>
+                </div>
+            </a>
         </div>
         <!-- Row 2 -->
         <div class="profile-row">
-            <div class="profile-card" data-name="kei">
-                <img src="{% static 'images/kei.jpg' %}" alt="Name1">
-                <p>Kei</p>
-            </div>
-            <div class="profile-card" data-name="mio">
-                <img src="{% static 'images/mio.jpg' %}" alt="Name2">
-                <p>Mio</p>
-            </div>
-            <div class="profile-card" data-name="nana">
-                <img src="{% static 'images/nana.jpg' %}" alt="Name3">
-                <p>Nana</p>
-            </div>
-            <div class="profile-card" data-name="raimu">
-                <img src="{% static 'images/raimu.jpg' %}" alt="Name4">
-                <p>Raimu</p>
-            </div>
-            <div class="profile-card" data-name="riko">
-                <img src="{% static 'images/riko.jpg' %}" alt="Name5">
-                <p>Riko</p>
-            </div>
+            <a href="{% url 'profile' name='kei' %}" class="profile-link">
+                <div class="profile-card" data-name="kei">
+                    <img src="{% static 'images/kei.jpg' %}" alt="kei">
+                    <p>Kei</p>
+                </div>
+            </a>
+            <a href="{% url 'profile' name='mio' %}" class="profile-link">
+                <div class="profile-card" data-name="mio">
+                    <img src="{% static 'images/mio.jpg' %}" alt="mio">
+                    <p>Mio</p>
+                </div>
+            </a>
+            <a href="{% url 'profile' name='nana' %}" class="profile-link">
+                <div class="profile-card" data-name="nana">
+                    <img src="{% static 'images/nana.jpg' %}" alt="nana">
+                    <p>Nana</p>
+                </div>
+            </a>
+            <a href="{% url 'profile' name='raimu' %}" class="profile-link">
+                <div class="profile-card" data-name="raimu">
+                    <img src="{% static 'images/raimu.jpg' %}" alt="raimu">
+                    <p>Raimu</p>
+                </div>
+            </a>
+            <a href="{% url 'profile' name='riko' %}" class="profile-link">
+                <div class="profile-card" data-name="riko">
+                    <img src="{% static 'images/riko.jpg' %}" alt="riko">
+                    <p>Riko</p>
+                </div>
+            </a>
         </div>
         <!-- Row 3 -->
         <div class="profile-row">
-            <div class="profile-card" data-name="rin">
-                <img src="{% static 'images/rin.jpg' %}" alt="Name1">
-                <p>Rin</p>
-            </div>
-            <div class="profile-card" data-name="sugi">
-                <img src="{% static 'images/sugi.jpg' %}" alt="Name2">
-                <p>Sugi</p>
-            </div>
-            <div class="profile-card" data-name="taiga">
-                <img src="{% static 'images/taiga.jpg' %}" alt="Name3">
-                <p>Tiaga</p>
-            </div>
-            <div class="profile-card" data-name="takako">
-                <img src="{% static 'images/takako.jpg' %}" alt="Name4">
-                <p>Takako</p>
-            </div>
-            <div class="profile-card" data-name="yasu">
-                <img src="{% static 'images/yasu.jpg' %}" alt="Name5">
-                <p>Yasu</p>
-            </div>
+            <a href="{% url 'profile' name='rin' %}" class="profile-link">
+                <div class="profile-card" data-name="rin">
+                    <img src="{% static 'images/rin.jpg' %}" alt="rin">
+                    <p>Rin</p>
+                </div>
+            </a>
+            <a href="{% url 'profile' name='sugi' %}" class="profile-link">
+                <div class="profile-card" data-name="sugi">
+                    <img src="{% static 'images/sugi.jpg' %}" alt="sugi">
+                    <p>Sugi</p>
+                </div>
+            </a>
+            <a href="{% url 'profile' name='taiga' %}" class="profile-link">
+                <div class="profile-card" data-name="taiga">
+                    <img src="{% static 'images/taiga.jpg' %}" alt="taiga">
+                    <p>Taiga</p>
+                </div>
+            </a>
+            <a href="{% url 'profile' name='takako' %}" class="profile-link">
+                <div class="profile-card" data-name="takako">
+                    <img src="{% static 'images/takako.jpg' %}" alt="takako">
+                    <p>Takako</p>
+                </div>
+            </a>
+            <a href="{% url 'profile' name='yasu' %}" class="profile-link">
+                <div class="profile-card" data-name="yasu">
+                    <img src="{% static 'images/yasu.jpg' %}" alt="yasu">
+                    <p>Yasu</p>
+                </div>
+            </a>
         </div>  
         <!-- Row 4 -->
         <div class="profile-row">
-            <div class="profile-card" data-name="zenji">
-                <img src="{% static 'images/zenji.jpg' %}" alt="Name1">
-                <p>Zenji</p>
+            <a href="{% url 'profile' name='zenji' %}" class="profile-link">
+                <div class="profile-card" data-name="zenji">
+                    <img src="{% static 'images/zenji.jpg' %}" alt="zenji">
+                    <p>Zenji</p>
+                </div>
+            </a>
+            <div class="profile-card" data-name="">
+                <img src="{% static 'images/.jpg' %}" alt="Name2">
+                <p></p>
             </div>
             <div class="profile-card" data-name="">
-                <img src="{% static 'images/mio.jpg' %}" alt="Name2">
-                <p>Ayaka</p>
+                <img src="{% static 'images/.jpg' %}" alt="Name3">
+                <p></p>
             </div>
             <div class="profile-card" data-name="">
-                <img src="{% static 'images/nana.jpg' %}" alt="Name3">
-                <p>Hayato</p>
+                <img src="{% static 'images/.jpg' %}" alt="Name4">
+                <p></p>
             </div>
             <div class="profile-card" data-name="">
-                <img src="{% static 'images/raimu.jpg' %}" alt="Name4">
-                <p>Hinako</p>
-            </div>
-            <div class="profile-card" data-name="">
-                <img src="{% static 'images/riko.jpg' %}" alt="Name5">
-                <p>Kanon</p>
+                <img src="{% static 'images/.jpg' %}" alt="Name5">
+                <p></p>
             </div>
         </div>      
         <!-- ... Rows 2 to 5 (similar to Row 1) ... -->
